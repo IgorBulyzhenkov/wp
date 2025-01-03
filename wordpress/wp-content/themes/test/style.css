@@ -1,0 +1,76 @@
+/*
+Theme Name: My Test Theme
+Theme URI: https://wp1.local
+Author: Bulyzhenkov Igor
+Author URI: https://wp1.local
+Description: Twenty Twenty-Five emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 7.2
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfive
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul.page-numbers {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    justify-content: center !important;
+}
+ul.page-numbers li:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+ul.page-numbers li:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+a.page-numbers,
+span.current{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+span.current{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: default;
+}
+span.dots{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    cursor: default;
+}
+nav.navigation{
+    width: 100%;
+}
+
+.wrapper{
+    margin: 20px 0;
+}
+
+.nav-footer{
+    width: 60%;
+}
